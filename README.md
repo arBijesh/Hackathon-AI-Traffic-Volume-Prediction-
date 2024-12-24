@@ -1,49 +1,63 @@
 # Hackathon AI Traffic Volume Prediction 🚦
 
 ## Project Overview
-This repository contains the code and resources for the **AI Traffic Volume Prediction** project, developed during a hackathon event. The objective of this project is to leverage machine learning and artificial intelligence to predict traffic volumes accurately, analyze traffic trends, and provide insights to improve urban mobility and reduce congestion.
-
-By utilizing historical traffic data and advanced predictive modeling techniques, this project aims to help city planners and transportation agencies manage traffic flow effectively and enhance commuting experiences.
+This repository contains the code and resources for a machine learning project aimed at predicting traffic volume. The dataset includes features such as weather conditions, timestamps, holidays, and more, which are used to build an accurate traffic forecasting model. The project demonstrates advanced data preprocessing, feature engineering, univariate and bivariate analysis, and the use of multiple machine learning algorithms to optimize predictions.
 
 ---
 
 ## Table of Contents
-1. [Features](#features)
-2. [Tech Stack](#tech-stack)
-3. [Setup and Installation](#setup-and-installation)
-4. [File Structure](#file-structure)
-5. [Usage](#usage)
-6. [Model Performance](#model-performance)
-7. [Key Insights](#key-insights)
-8. [Future Enhancements](#future-enhancements)
-9. [Contributing](#contributing)
-
+1. [About the Dataset](#about-the-dataset)
+2. [Key Features](#key-features)
+3. [Tech Stack](#tech-stack)
+4. [Setup and Installation](#setup-and-installation)
+5. [File Structure](#file-structure)
+6. [Data Analysis](#data-analysis)
+   - [Univariate Analysis](#univariate-analysis)
+   - [Bivariate Analysis](#bivariate-analysis)
+7. [Implementation Details](#implementation-details)
+8. [Model Performance](#model-performance)
+9. [Future Enhancements](#future-enhancements)
+10. [Contributing](#contributing)
+11. [License](#license)
 
 ---
 
-## Features
-- **Traffic Volume Prediction**: AI-powered models to forecast traffic volume with high accuracy.
-- **Data Visualization**: Interactive plots to explore traffic trends and patterns.
-- **Scalable Design**: Built to process large datasets efficiently.
-- **Customizable Framework**: Modular design for easy updates and model improvements.
+## About the Dataset
+The dataset provides key features like:
+- **Time**: Timestamps indicating when the traffic data was collected.
+- **Weather Conditions**: Detailed information about weather, such as clear skies, rain, snow, and more.
+- **Holiday Information**: Indicators for holidays and weekends.
+- **Traffic Volume**: The target variable representing the traffic flow at a given time.
+
+### Dataset Files:
+1. **Train.csv**: Historical data used for training the model.
+2. **Test.csv**: Data for which traffic volume predictions are to be generated.
+3. **Submission.csv**: Sample submission format.
+
+---
+
+## Key Features
+- **Advanced Feature Engineering**:
+  - Extracted time-based features like hour, day, month, year.
+  - Grouped weather conditions into meaningful categories.
+  - Derived statistical aggregations for features like temperature, rainfall, and cloud cover.
+  - Created lag features to capture temporal dependencies.
+- **Exploratory Data Analysis**:
+  - Distribution plots for traffic volume and other features.
+  - Correlation analysis to identify important predictors.
+- **Modeling and Optimization**:
+  - Implemented multiple regression techniques: Linear Regression, Ridge, Lasso, ElasticNet, Random Forest, Gradient Boosting.
+  - Performed hyperparameter tuning using GridSearchCV.
 
 ---
 
 ## Tech Stack
-### Programming Languages and Tools
-- **Python**
-- **Jupyter Notebook**
-
-### Libraries
-- **Pandas**: For data manipulation and preprocessing.
-- **NumPy**: For numerical computations.
-- **Scikit-learn**: For machine learning model training and evaluation.
-- **Matplotlib/Seaborn**: For data visualization.
-- **Plotly**: For interactive visualizations.
-
-### Additional Resources
-- **Dataset**: Provided by the hackathon organizers.
-- **Environment**: Python 3.8+
+- **Programming Language**: Python
+- **Libraries**:
+  - **Pandas, NumPy**: For data manipulation and preprocessing.
+  - **Matplotlib, Seaborn**: For visualization.
+  - **Scikit-learn**: For modeling and evaluation.
+  - **SciPy**: For statistical analysis.
 
 ---
 
